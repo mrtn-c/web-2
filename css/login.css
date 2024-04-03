@@ -1,0 +1,168 @@
+/* styles.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-logo {
+  text-align: center; /* Centra el logo horizontalmente */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px; /* Espacio debajo del logo */
+  width: 128.182px;
+  height: 94px;
+  flex-shrink: 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: opacity 3s ease-in-out;
+  opacity: 0; /* Inicia oculto */
+  pointer-events: none; /* Evita la interacción inicial */
+}
+
+.figura {
+  fill: #507cdd;
+  stroke-width: 1px;
+  stroke: #507cdd;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.splash {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.login-container:not(.hidden) {
+  opacity: 1;
+  pointer-events: all; /* Permite la interacción cuando es visible */
+}
+
+.input-container {
+  position: relative;
+  width: 333px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  height: 100%;
+  padding-left: 45px; 
+  border-radius: 10px;
+  border: 1px solid #fff; 
+  box-sizing: border-box; 
+  outline: none;
+  background: transparent; /* Hacer el fondo transparente */
+}
+
+.input-container.bg-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 63, 159, 0.20);; /* Color de fondo deseado */
+  border-radius: 10px;
+  z-index: -1; /* Colocar detrás del input */
+
+}
+
+
+.input-container.bg-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7; /* Color de fondo deseado */
+  border-radius: 10px;
+  z-index: -1; /* Colocar detrás del input */
+}
+
+
+
+.input-icon {
+  position: absolute;
+  left: 15px; /* Distancia desde el borde izquierdo del input */
+  top: 50%;
+  transform: translateY(-50%); /* Centra el ícono verticalmente */
+  pointer-events: none; /* Asegúrate de que el clic en el ícono no haga nada */
+}
+
+/* Estilos adicionales para la presentación del formulario y otros elementos */
+
+/* Esconde el borde del input cuando no está activo y cámbialo al estar en foco */
+.input-container input:focus {
+  border: 1px solid #507cdd;
+}
+
+.button {
+  color: white; /* Color del texto del botón */
+  font-size: 16px; /* Tamaño del texto */
+  font-weight: bold; /* Hacer el texto en negrita */
+  padding: 12px 24px; /* Espaciado interior: 12px arriba/abajo, 24px izquierda/derecha */
+  border: none; /* Sin borde */
+  border-radius: 10px;
+  background: #311b92;
+  cursor: pointer; /* Cursor tipo mano al pasar el mouse sobre el botón */
+  text-transform: uppercase; /* Opcional: transformar el texto a mayúsculas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera para darle profundidad */
+  transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+  width: 333px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #3a2c56; /* Oscurece el botón al pasar el mouse */
+}
+
+.p-password {
+  color: rgba(28, 25, 57, 0.8);
+  display: flex;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: auto;
+  border: none;
+  background-color: #fff;
+}
+
+.register-prompt {
+  color: rgba(28, 25, 57, 0.8);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  margin-top: 10px;
+}
+
+.register-link {
+  color: rgba(28, 25, 57, 0.8);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}

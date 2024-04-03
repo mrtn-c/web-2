@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+iframe {
+    margin: 0;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px; /* Reducido el margen inferior */
+}
+
+
+
+.balance-text, .balance-amount {
+    color: white;
+}
+
+.balance-amount {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+

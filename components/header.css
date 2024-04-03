@@ -1,0 +1,38 @@
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border: none;
+        margin-top: 30px;
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    
+
+    .wibond-text {
+    color: #17171a;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; 
+    letter-spacing: 3px;
+    }
+
+    .logo-button button {
+        background-color: transparent; 
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .back-button button {
+        background-color: transparent; /* Color de fondo del botón */
+        color: #fff; /* Color del texto */
+        border: none;
+        cursor: pointer;
+    }

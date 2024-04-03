@@ -1,0 +1,51 @@
+body {
+  overflow: hidden;
+  width: auto;
+  height: max-content;
+}
+
+.balance-box {
+    position: relative; /*Para los circulos*/
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 96px; 
+  padding: 10px;
+  background: #5252ff;
+  border-radius: 10px;
+}
+
+.text {
+    color: #FFF;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 2px;
+}
+
+.balance-box::before,
+.balance-box::after {
+    content: '';
+    position: fixed;
+    height: 230.698px;
+    border-radius: 50%; /* Forma circular */
+
+}
+
+.balance-box::after {
+    top: -50px; /* Posicionamiento en la parte superior */
+    left: -25px; /* Posicionamiento en el extremo izquierdo */
+    background-color: rgba(255, 255, 255, 0.10);
+    width: 200px;
+    
+}
+
+/* Posicionamiento de los círculos */
+.balance-box::before {
+    top: -70px; /* Posicionamiento en la parte superior */
+    left: -25px; /* Posicionamiento en el extremo izquierdo */
+    background-color: rgba(255, 255, 255, 0.10);
+    width: 210px;
+}
+

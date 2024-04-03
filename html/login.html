@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <header class="header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="360"
+          height="204"
+          viewBox="0 0 360 204"
+          fill="none"
+          class="figura"
+        >
+          <path
+            d="M359.5 0.5C100 12 192 213 0 203V73.5V-0.5L359.5 0.5Z"
+            fill="#507CDD"
+            stroke="#507CDD"
+          />
+        </svg>
+      </header>
+      <div class="splash">
+        <img src="../img/Logo.svg" alt="Logo Splash" />
+      </div>
+      <div class="login-container hidden">
+        <div class="login-logo">
+            <img src="../img/Logo.svg" alt="Logo WIBOND" />
+        </div>
+        <div>
+          <form id="loginForm" method="post" action="./login.js">
+            <div class="input-container bg-1">
+              <input type="text" id="username" name="username" placeholder="Usuario">
+                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="input-container bg-2" >
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="#4D4D4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <button type="url" class="p-password">Olvidaste tu Contraseña?</p>
+        </div>
+            
+            <input id="loginSubmit" class="button" type="submit" value="Iniciar Sesion" disabled>
+            <div class="register-prompt">
+              No tenés una cuenta? - <a href="#" class="register-link">Regístrate</a>
+            </div>
+          </form>
+        </div>
+        
+        </div>
+    </div>
+
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

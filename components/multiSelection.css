@@ -1,0 +1,48 @@
+body {
+    font-family: Lato;
+}
+
+.tipo-transferencia {
+    box-sizing: content-box;
+    border-color: gray;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Separación entre cajas */
+    overflow: hidden; /* Eliminar el desplazamiento */
+}
+
+.titulo {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px; /* Espacio entre el título y las opciones */
+    padding: 10px; 
+    border-radius: 10px 10px 0 0; 
+}
+
+.opciones {
+    padding: 10px; 
+    background-color: white; 
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-bottom: 1px solid gray; 
+    padding-bottom: 10px; 
+}
+
+.selection:last-child {
+    border-bottom: none; /* Eliminar la línea inferior de la última opción */
+    margin-top: 10px;
+}
+
+.opciones label {
+    margin-right: 10px; 
+}
+
+.opciones input[type="radio"] {
+    margin-right: 5px; 
+}
