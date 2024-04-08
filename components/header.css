@@ -1,38 +1,38 @@
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        border: none;
-        margin-top: 30px;
-        width: 100%;
-        height: fit-content;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 30px;
+  width: 100%;
+  height: fit-content;
+  border: none;
+}
 
-    }
+.wibond-text {
+  color: #17171a;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "dlig" on;
+  font-family: Montserrat;
+  font-size: 12.233px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17.476px; /* 142.857% */
+  letter-spacing: 3px;
+}
 
-    
+.logo-button button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-    .wibond-text {
-    color: #17171a;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px; 
-    letter-spacing: 3px;
-    }
-
-    .logo-button button {
-        background-color: transparent; 
-        border: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 5px; 
-    }
-
-    .back-button button {
-        background-color: transparent; /* Color de fondo del botón */
-        color: #fff; /* Color del texto */
-        border: none;
-        cursor: pointer;
-    }
+.back-button button {
+  background-color: transparent; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  border: none;
+  cursor: pointer;
+}

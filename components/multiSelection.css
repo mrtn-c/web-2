@@ -1,24 +1,27 @@
 body {
-    font-family: Lato;
+    font-family: Montserrat;
 }
 
 .tipo-transferencia {
     box-sizing: content-box;
-    border-color: gray;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
-    margin-bottom: 20px; /* Separación entre cajas */
-    overflow: hidden; /* Eliminar el desplazamiento */
+    overflow: hidden;
+    height: max-content; 
+    padding: 0px;
+    
 }
 
 .titulo {
-    background-color: black;
-    color: white;
-    font-size: 16px;
+    background-color: #1F1F1F;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
     font-weight: 700;
-    margin-bottom: 10px; /* Espacio entre el título y las opciones */
+    line-height: normal;
     padding: 10px; 
     border-radius: 10px 10px 0 0; 
+    margin: 0;
 }
 
 .opciones {
@@ -40,9 +43,16 @@ body {
 }
 
 .opciones label {
+    color: #4D4D4D;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin-right: 10px; 
 }
 
 .opciones input[type="radio"] {
+    scale: 1.5;
     margin-right: 5px; 
 }
+

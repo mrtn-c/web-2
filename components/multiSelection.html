@@ -1,26 +1,53 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Componente con CSS</title>
-    <link rel="stylesheet" href="multiSelection.css">
+    <link rel="stylesheet" href="multiSelection.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-</head>
-
-<div class="tipo-transferencia">
-    <p class="titulo">Tipo de transferencia:</p>
-    <div class="opciones">
+    <script src="./multiSelection.js"></script>
+  </head>
+  <body>
+    <div class="tipo-transferencia">
+      <p id="titulo" class="titulo"></p>
+      <div class="opciones">
         <div class="selection">
-            <label for="transferencia-unica">Transferencia única</label><br>
-            <input type="radio" id="transferencia-unica" name="tipo-transferencia" checked>
+          <label id="transferencia-unica-label" for="transferencia-unica"
+            >Destino</label
+          ><br />
+          <input
+            type="radio"
+            id="transferencia-unica"
+            name="tipo-transferencia"
+            checked
+          />
         </div>
         <div class="selection">
-            <label for="transferencia-multiple">Transferencia múltiple</label>  
-            <input type="radio" id="transferencia-multiple" name="tipo-transferencia">    
+          <label id="transferencia-multiple-label" for="transferencia-multiple"
+            >Destino 2</label
+          >
+          <input
+            type="radio"
+            id="transferencia-multiple"
+            name="tipo-transferencia"
+          />
         </div>
+      </div>
     </div>
-</div>
+    <script>
+      document.querySelectorAll(".selection").forEach(function (selection) {
+        selection.addEventListener("click", function () {
+          console.log("hola")
+          var selectedOption = this.querySelector("label").getAttribute("for");
+          localStorage.setItem("selectedOption", selectedOption);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,22 +1,29 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Lato;
+}
+
+html {
+    box-sizing: content-box;
 }
 
 iframe {
     margin: 0;
     width: 100%;
     border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    margin-bottom: 10px;
 
 }
 
 .container {
+    margin-top: 0px; 
     padding: 20px;
 }
 
 h2 {
     margin-bottom: 20px; /* Reducido el margen inferior */
+    
 }
 
 
@@ -33,4 +40,6 @@ h2 {
     font-weight: 700;
     line-height: normal;
 }
+
+
 

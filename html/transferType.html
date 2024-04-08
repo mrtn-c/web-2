@@ -13,12 +13,51 @@
     />
   </head>
   <body>
-    <iframe src="../components/header.html" style="height: 70px"></iframe>
+    <iframe
+      src="../components/header.html"
+      style="height: 60px; border-bottom: 1px solid #d8d7d7; margin-top: 20px"
+    ></iframe>
     <div class="container">
       <h2>Transferir dinero</h2>
-      <iframe src="../components/balance.html" style="box-shadow: none"></iframe>
-      <iframe src="../components/multiSelection.html" style="box-shadow: none; height: 250px"></iframe>
-
+      <iframe
+        src="../components/balance.html"
+        style="height: 125px; width: 100%"
+      ></iframe>
+      <iframe
+        id="miIframe"
+        src="../components/multiSelection.html"
+        style="height: 200px; width: 100%"
+      ></iframe>
+      <iframe src="../components/next.html" style="margin-top: 150px"></iframe>
     </div>
   </body>
+  <script>
+    var iframe = document.getElementById("miIframe");
+    iframe.onload = function () {
+      var estiloCSS = `
+            :root {
+              --titulo: "Tipo de destino";
+              --unico: "Destinatario unico";
+              --multiples: "Multiples destinatarios";
+            }
+
+          `;
+      var message = {
+        type: "applyStyles",
+        css: estiloCSS,
+      };
+      iframe.contentWindow.postMessage(message, "*");
+    };
+
+    window.addEventListener("message", function (event) {
+
+      if (event.data.selectedOption === "transferencia-unica") {
+        // Redireccionar a una página específica para "Destinatario unico"
+        window.location.href = "./singleDestination.html";
+      } else if (event.data.selectedOption === "transferencia-multiple") {
+        // Redireccionar a una página específica para "Multiples destinatarios"
+        window.location.href = "./multiDestination.html";
+      }
+    });
+  </script>
 </html>
