@@ -43,7 +43,6 @@
     <script>
       document.querySelectorAll(".selection").forEach(function (selection) {
         selection.addEventListener("click", function () {
-          console.log("hola")
           var selectedOption = this.querySelector("label").getAttribute("for");
           localStorage.setItem("selectedOption", selectedOption);
         });

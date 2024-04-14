@@ -51,6 +51,12 @@
 
     window.addEventListener("message", function (event) {
 
+      console.log(event.origin)
+
+      if (event.origin !== "../components/next.html") {
+        return;
+      }
+
       if (event.data.selectedOption === "transferencia-unica") {
         // Redireccionar a una página específica para "Destinatario unico"
         window.location.href = "./singleDestination.html";

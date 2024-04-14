@@ -1,0 +1,148 @@
+h2 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+p {
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 1;
+
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  width: 95%;
+}
+
+.text-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.balance-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 201px;
+    padding: 10px;
+    background: #5252ff;
+    border-radius: 10px;
+    margin-top: 15px;
+    align-items: center;
+    overflow: hidden; /* Agregado: oculta el contenido que se sale del contenedor */
+  }
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  max-width: fit-content; /* Ajusta el ancho al contenido */
+  font-family: Lato;
+  font-size: 45px;
+  width: -moz-fit-content;
+  z-index: 1;
+}
+
+.input-symbol {
+  margin-right: 5px;
+  color: #fff;
+  z-index: 1;
+
+  
+}
+
+#moneyInput {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-top: 3px;
+  width: 90px; /* Ancho inicial */
+  max-width: 90%;
+  font-size: 45px;
+  font-family: Lato;
+  color: #fff;
+  z-index: 1;
+
+}
+
+#moneyInput::placeholder {
+    color: #fff; /* Cambia el color del placeholder a blanco */
+}
+
+.impuesto {
+    display: flex;
+    border-radius: 10px;
+    border: 0.5px dashed rgba(0, 0, 0, 0.20);
+    background: rgba(80, 124, 221, 0.20);
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 35px;
+}
+  
+
+.balance-box::before {
+  content: '';
+  position: absolute;
+  top: -100px; /* Ajusta la posición vertical */
+  left: -80px; /* Ajusta la posición horizontal */
+  width: 250px;
+  height: 260px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.10);; /* Color del círculo */
+  clip-path: circle(160px at center); /* Limita el círculo al tamaño del contenedor */
+}
+
+.balance-box::after {
+    content: '';
+    position: absolute;
+    top: -70px; /* Ajusta la posición vertical */
+    left: -70px; /* Ajusta la posición horizontal */
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);; /* Color del círculo */
+    clip-path: circle(150px at center); /* Limita el círculo al tamaño del contenedor */
+  }
+
+  .input-message {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.20);
+    margin-top: 10px;
+    height: 35px;
+  }
+
+#messageArea-input {
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    width: 95%;
+    outline: none;
+    
+}
